@@ -2,9 +2,7 @@ import { allocateResources, releaseResources, getActiveCount, hasCapacity, estim
 
 describe('Resource Allocator', () => {
   afterEach(() => {
-    // Clean up by releasing all allocated resources
-    const count = getActiveCount();
-    // Note: we track state externally in tests
+    // Tests individually clean up their allocations
   });
 
   it('should allocate small tier resources', () => {
